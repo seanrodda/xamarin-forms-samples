@@ -1,8 +1,8 @@
 ﻿namespace TodoAzure
 {
-	public static class Constants
-	{
-		// Replace strings with your mobile services and gateway URLs.
-		public static string ApplicationURL = @"<INSERT_YOUR_MOBILE_APPS_URL_HERE>";
-	}
+    public static class Constants
+    {
+        // Replace string with your mobile service URL.
+        public static string ApplicationURL = @"INSERT_APP_SERVICE_URL_HERE";
+    }
 }

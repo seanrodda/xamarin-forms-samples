@@ -1,90 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SkiaSharpFormsDemos"
-             x:Class="SkiaSharpFormsDemos.HomePage"
-             Title="SkiaSharp Forms Demos"
-             Padding="10">
+<local:HomeBasePage xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:local="clr-namespace:SkiaSharpFormsDemos"
+                    x:Class="SkiaSharpFormsDemos.HomePage"
+                    Title="SkiaSharp Forms Demos"
+                    Padding="10">
     <TableView Intent="Menu">
         <TableRoot>
-            <TableSection Title="SkiaSharp Basics">
-                <TextCell Text="Simple Circle"
-                          Detail="Outline and fill a circle with SkiaSharp"
+            <TableSection>
+                <TextCell Text="SkiaSharp Drawing Basics"
+                          Detail="Learn basic graphics concepts and coordinates"
                           Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:SimpleCirclePage}" />
+                          CommandParameter="{x:Type local:Basics.BasicsHomePage}" />
 
-                <TextCell Text="Tap Toggle Fill"
-                          Detail="Tap the screen to toggle the circle fill"
+                <TextCell Text="SkiaSharp Lines and Path"
+                          Detail="Use SkiaSharp to draw lines and graphics paths"
                           Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:TapToggleFillPage}" />
+                          CommandParameter="{x:Type local:Paths.PathsHomePage}" />
 
-                <TextCell Text="Surface Size"
-                          Detail="Display the surface size three different ways"
+                <TextCell Text="SkiaSharp Transforms"
+                          Detail="Learn about transforms for modifying graphics"
                           Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:SurfaceSizePage}" />
+                          CommandParameter="{x:Type local:Transforms.TransformsHomePage}" />
 
-                <TextCell Text="Ellipse Fill"
-                          Detail="Fill the surface with an ellipse"
+                <TextCell Text="SkiaSharp Curves and Paths"
+                          Detail="Discover how to draw curves and use path features"
                           Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:EllipseFillPage}" />
-
-                <TextCell Text="Pulsating Ellipse"
-                          Detail="Animate the axes of an ellipse"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:PulsatingEllipsePage}" />
-
-                <TextCell Text="Framed Text"
-                          Detail="Draw a rounded rectangle around a text string"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:FramedTextPage}" />
-            </TableSection>
-
-            <TableSection Title="Lines and Paths">
-                <TextCell Text="Stroke Caps"
-                          Detail="List and show the three stroke cap options"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:StrokeCapsPage}" />
-
-                <TextCell Text="Multiple Lines"
-                          Detail="Draw multiple lines using DrawPoints"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:MultipleLinesPage}" />
-
-                <TextCell Text="Two Triangle Contours"
-                          Detail="Use a graphics path to draw open and closed triangles"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:TwoTriangleContoursPage}" />
-
-                <TextCell Text="Stroke Joins"
-                          Detail="List and show the three stroke join options"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:StrokeJoinsPage}" />
-
-                <TextCell Text="Five-Pointed Star"
-                          Detail="Demonstrate path fill types"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:FivePointedStarPage}" />
-
-                <TextCell Text="Overlapping Circles"
-                          Detail="Draw overlapping circles"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:OverlappingCirclesPage}" />
-
-                <TextCell Text="Archimedean Spiral"
-                          Detail="Use a graphics path to draw a spiral"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:ArchimedeanSpiralPage}" />
-
-                <TextCell Text="Dots and Dashes"
-                          Detail="Render a line with dots and dashes"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:DotsAndDashesPage}" />
-
-                <TextCell Text="Animated Spiral"
-                          Detail="Animate an Archimedean Spiral"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type local:AnimatedSpiralPage}" />
+                          CommandParameter="{x:Type local:Curves.CurvesHomePage}" />
             </TableSection>
         </TableRoot>
     </TableView>
-</ContentPage>
+</local:HomeBasePage>

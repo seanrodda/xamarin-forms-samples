@@ -10,7 +10,7 @@ The REST service provides the following operations:
 - PUT: updates a todo item - /api/todoitems/{id}
 - DELETE: deletes a todo item - /api/todoitems/{id}
 
-For more information about the sample see [Consuming a RESTful Web Service](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/web-services/consuming/rest/) and [Authenticating a RESTful Web Service](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/web-services/authentication/rest/).
+For more information about the sample see [Consuming a RESTful Web Service](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/web-services/consuming/rest/) and [Authenticating a RESTful Web Service](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/web-services/authentication/rest/), and [Creating Backend Services for Native Mobile Applications](https://docs.microsoft.com/en-us/aspnet/core/mobile/native-mobile-backend).
 
 Setting up the REST service
 ---------------------------
@@ -30,7 +30,7 @@ The accompanying Xamarin.Forms sample application consumes a Xamarin-hosted REST
 1. In the *Create Web App on Microsoft Azure* dialog, ensure that the *Database server* drop-down is set to *No database*.
 1. In the *Create Web App on Microsoft Azure* dialog, click the *Create* button to create the web app in the specified Azure region.
 1. In the *Publish Web* dialog, click the *Publish* button to publish the REST service to the web app created in the previous step.
-1. In *Xamarin Studio* or *Visual Studio*, load the *TodoREST solution*, expand the *TodoREST* project and update the `Constants.RestUrl` property to the address of the web app created in the previous steps.
+1. In *Visual Studio* or *Visual Studio for Mac*, load the *TodoREST solution*, expand the *TodoREST* project and update the `Constants.RestUrl` property to the address of the web app created in the previous steps.
 
 For more information about publishing to an Azure Web App, see [Creating an ASP.NET web app in Azure App Service](https://azure.microsoft.com/en-gb/documentation/articles/web-sites-dotnet-get-started/#create-an-aspnet-web-application).
 
